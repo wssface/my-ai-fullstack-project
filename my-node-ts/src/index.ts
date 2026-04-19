@@ -120,3 +120,5 @@ app.delete('/api/todos/:id', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
 })
+
+module.exports = app;//导出app对象，以便在其他文件中使用
