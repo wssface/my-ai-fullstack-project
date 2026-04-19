@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --config vite.config.ts",
-    "build:dev": "vue-tsc --noEmit && vite build --config vite.config.ts",
+    "build": "vue-tsc --noEmit && vite build --config vite.config.ts",
     "build:test": "vue-tsc --noEmit && vite build --config vite.config.ts --mode test",
     "build:prod": "vue-tsc --noEmit && vite build --config vite.config.ts",
     "type-check": "vue-tsc --noEmit",
