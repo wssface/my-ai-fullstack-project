@@ -1,7 +1,7 @@
 import type { Todo, TodoCreateDTO, TodoUpdateDTO } from '@shared-types/todo';
 import { request } from '@/utils/tool.ts';
-const API_BASE = 'http://localhost:3001/api';
-
+//const API_BASE = 'http://localhost:3001/api';
+const API_BASE = '/api';
 /**
  * 公开方法
  *

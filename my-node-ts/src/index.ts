@@ -3,6 +3,7 @@ import cors from 'cors'//cors是一个用于处理跨域请求的中间件
 import fs from 'fs/promises' //fs/promises是Node.js中的一个模块，它提供了一些用于处理文件和目录的异步API
 import path from 'path'
 import type { Todo, TodoCreateDTO, TodoUpdateDTO } from '@shared-types/todo'
+import serverless from 'serverless-http';
 
 // 创建应用对象
 const app = express()
@@ -122,3 +123,4 @@ app.listen(PORT, () => {
 })
 
 module.exports = app;//导出app对象，以便在其他文件中使用
+export const handler = serverless(app);

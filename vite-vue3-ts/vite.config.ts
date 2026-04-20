@@ -19,7 +19,7 @@ export default defineConfig({
   resolve: {
     alias: {
        '@': path.resolve(__dirname, './src'),
-       '@shared-types': fileURLToPath(new URL('../packages/shared-types', import.meta.url))
+       '@shared-types': fileURLToPath(new URL('./packages/shared-types', import.meta.url))
       //'@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },

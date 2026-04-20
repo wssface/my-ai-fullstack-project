@@ -20,7 +20,7 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@shared-types/*": ["../packages/shared-types/*"]
+      "@shared-types/*": ["/packages/shared-types/*"]
     },
     "types": ["node"]
   },

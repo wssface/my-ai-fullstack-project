@@ -1,4 +1,14 @@
 {
   "buildCommand": "cd vite-vue3-ts && npm install && npm run build",
-  "outputDirectory": "vite-vue3-ts/dist"
+  "outputDirectory": "vite-vue3-ts/dist",
+  "installCommand": "cd vite-vue3-ts && npm install",
+  "nodeVersion": "20",
+  "functions": {
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/index"
+      }
+    ]
+  }
 }

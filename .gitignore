@@ -23,3 +23,8 @@ dist-ssr
 *.sw?
 .vscode
 .husky
+# Tencent Cloud EdgeOne
+.env
+.edgeone/*
+.tef_dist/*
+  
