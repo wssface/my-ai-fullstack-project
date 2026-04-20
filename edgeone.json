@@ -1,7 +1,7 @@
 {
-  "buildCommand": "cd vite-vue3-ts && npm install && npm run build",
   "outputDirectory": "vite-vue3-ts/dist",
-  "installCommand": "cd vite-vue3-ts && npm install",
+  "installCommand": "cd vite-vue3-ts && npm install --legacy-peer-deps",
+  "buildCommand": "cd vite-vue3-ts && npm run build",
   "nodeVersion": "20",
   "functions": {
     "routes": [

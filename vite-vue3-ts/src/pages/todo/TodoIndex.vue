@@ -10,7 +10,7 @@ import {
 import AddTodo from '@/components/AddTodo.vue';
 import TodoList from '@/components/TodoList.vue';
 const todos = ref<Todo[]>([]);
-const loading = ref(true);
+const loading = ref(false);
 onMounted(async () => {
   todos.value = await getAllTodos();
   loading.value = false;
